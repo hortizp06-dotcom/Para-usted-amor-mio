@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para mi princesa ❤️</title>
+<meta name="description" content="Hecho con amor, solo para ti. Toca para abrir tu regalo.">
+<meta name="theme-color" content="#fff3f6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Para mi princesa ❤️">
+<meta property="og:description" content="Hecho con amor, solo para ti. Toca para abrir tu regalo.">
+<!-- Después de publicar, cambia TU-USUARIO y TU-REPO por los tuyos (ver README) -->
+<meta property="og:image" content="https://TU-USUARIO.github.io/TU-REPO/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hearts" aria-hidden="true"></div>
+
+<section class="screen hero" id="inicio">
+  <p class="pill">✨ Hecho con mucho amor</p>
+  <div class="seal" aria-hidden="true"><span>💌</span></div>
+  <h1 id="heroTitle">Para ti, mi princesa</h1>
+  <p class="lead" id="heroText">Preparé esto con mucho cuidado, solo para ti. Ábrelo con calma.</p>
+  <button class="btn" id="startBtn">💗 Toca aquí, mi amor</button>
+</section>
+
+<section class="screen reveal" id="historia">
+  <p class="kicker">Para mi amor</p>
+  <h2>Juntos desde</h2>
+  <p class="since" id="sinceText"></p>
+  <div class="counter" role="timer" aria-live="off">
+    <div><b id="cY">0</b><span>años</span></div>
+    <div><b id="cM">0</b><span>meses</span></div>
+    <div><b id="cD">0</b><span>días</span></div>
+  </div>
+  <div class="clock"><b id="cH">00</b>:<b id="cMin">00</b>:<b id="cS">00</b></div>
+  <p class="small">horas · minutos · segundos</p>
+  <p class="note">Y cada segundo seguimos escribiendo nuestra historia. ❤️</p>
+</section>
+
+<section class="screen reveal" id="cancion">
+  <h2>🎵 Nuestra canción</h2>
+  <div class="player">
+    <div class="vinyl" id="vinyl" aria-hidden="true"><i></i></div>
+    <h3 id="songTitle"></h3>
+    <p id="songArtist"></p>
+    <button class="btn" id="playBtn">🎵 Reproducir nuestra canción</button>
+    <div id="embed" class="embed"></div>
+    <div class="links"><a id="spLink" target="_blank" rel="noopener">Abrir en Spotify</a><a id="ytLink" target="_blank" rel="noopener">Abrir en YouTube</a></div>
+  </div>
+</section>
+
+<section class="screen reveal" id="momentos">
+  <h2>Nuestros momentos</h2>
+  <p class="lead">Algunos pedacitos de nuestra historia…</p>
+  <div class="polaroids" id="gallery"></div>
+</section>
+
+<section class="screen reveal" id="amo">
+  <h2>Cosas que amo de ti</h2>
+  <p class="lead">Toca cada corazón, son pequeños secretos.</p>
+  <div class="loves" id="loves"></div>
+</section>
+
+<section class="screen reveal" id="carta">
+  <p class="envelope-text">Tengo algo que decirte…</p>
+  <button class="envelope" id="envelope" aria-label="Abrir mi carta">
+    <span class="flap"></span><span class="paper">💌</span><span class="front"></span>
+  </button>
+  <button class="btn" id="openLetter">Abrir mi carta</button>
+  <article class="letter" id="letter" hidden></article>
+</section>
+
+<section class="screen final reveal" id="final">
+  <div class="stars" aria-hidden="true"></div>
+  <h2 id="fTitle"></h2>
+  <p class="lead" id="fText"></p>
+  <p class="sign" id="fSign"></p>
+  <button class="btn ghost" id="againBtn">❤️ Volver a empezar</button>
+</section>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true">
+  <button class="close" id="closeLb" aria-label="Cerrar">×</button>
+  <figure><img id="lbImg" alt=""><figcaption><h3 id="lbTitle"></h3><time id="lbDate"></time><p id="lbText"></p></figcaption></figure>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
