@@ -135,7 +135,7 @@ loves.forEach(t => {
 });
 
 // Aparición al hacer scroll
-const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }), { threshold: .2 });
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }), { threshold: 0, rootMargin: '0px 0px -8% 0px' });
 document.querySelectorAll('.reveal').forEach(s => io.observe(s));
 
 // Música: solo con toque del usuario
